@@ -5,20 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <script defer src="./javascript/javascript.js"></script>
     <title>Kenneths Portfolio</title>
   </head>
   <body>
+    <!-- main page -->
     <header>
       <h1>Kenneth Ellebring</h1>
     </header>
     <main class="maincontent">
-      <a href="#" class="column" id="section1"></a>
-      <a href="#" class="column" id="section2"></a>
-      <a href="#" class="column" id="section3"></a>
+      <a href="#" class="column" id="section1" onclick="toggleAbout();closeProjects();closeContact()"></a>
+      <a href="#" class="column" id="section2" onclick="toggleProjects();closeAbout();closeContact()"></a>
+      <a href="#" class="column" id="section3" onclick="toggleContact();closeAbout();closeProjects()"></a>
       <p class="text1">About</p>
       <p class="text2">Projects</p>
       <p class="text3">Contact</p>
     </main>
+    <!-- overlay curtain menus -->
+    <!-- About curtain -->
+    <section id="aboutOverlay">
+      <div id="about" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeAbout()">&times;</a>
+        <div class="overlay-content">
+          <h2>About</h2>
+          <p>
+            My name is <strong><em>Kenneth Ellebring</em></strong> and studying Fullstack web developer at <strong><em>Nackademin</em></strong
+            >, i got a genuine interest in <strong><em>webdevelopment</em></strong
+            >, <strong><em>datahandling</em></strong> and <strong><em>security</em></strong> in both <strong><em>Frontend</em></strong> and <strong><em>Backend</em></strong> environments.<br /><br />
+            On spare time i like to play computer games, training at the gym or working on my projects
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Projects curtain -->
+    <section id="projectsOverlay">
+      <div id="projects" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeProjects()">&times;</a>
+        <div class="overlay-content">
+          <h2>Projects</h2>
+          <div class="projectColumns">
+            <div class="projectRow">
+              <h3>Javascript</h3>
+              <a href="#">Calculator</a>
+              <a href="#">Examination Assigment</a>
+            </div>
+            <div class="projectRow">
+              <h3>HTML/CSS</h3>
+              <a href="#">Restaurant</a>
+              <a href="#">Twitter Lookalike - Bootstrap</a>
+              <a href="#">Kenneth Portfolio</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact curtain -->
+    <section id="contactOverlay">
+      <div id="contact" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeContact()">&times;</a>
+        <div class="overlay-content">
+          <h2>Contact</h2>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/kenneth-ellebring-6919b6106/">Kenneth Ellebring</a></p>
+          <p>Github: <a href="https://github.com/KennethEllebring">KennethEllebring</a></p>
+          <p>E-mail: <a href="mailto:kenneth.ellebring@gmail.com">kenneth.ellebring@gmail.com</a></p>
+          <p>Phone: <a href="tel:+46708686426">+46708686426</a></p>
+        </div>
+      </div>
+    </section>
+
     <footer></footer>
   </body>
 </html>
