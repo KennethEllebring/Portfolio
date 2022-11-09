@@ -87,7 +87,6 @@ h1 {
 
 /* curtain menu 1*/
 .overlay {
-  height: 0%;
   width: 100%;
   position: fixed;
   z-index: 1;
@@ -99,7 +98,7 @@ h1 {
 }
 .overlay-content {
   position: relative;
-  top: 10%;
+  top: 1%;
   left: 24%;
   width: 50%;
   text-align: center;
@@ -119,7 +118,7 @@ h1 {
 .overlay h2 {
   color: #818181;
   font-size: 4rem;
-  margin: 1rem;
+  margin: 0rem;
 }
 .overlay h3 {
   color: #818181;
@@ -128,16 +127,18 @@ h1 {
   margin-bottom: 0rem;
 }
 .overlay p {
+  margin-top: 0rem;
   color: #818181;
 }
 .overlay a:hover {
-  color: #ff0000;
+  color: #0000ff;
 }
 .overlay .closebtn {
   position: absolute;
   top: 20px;
   right: 45px;
   font-size: 60px;
+  z-index: 1;
 }
 
 /* main screen adjust */
@@ -161,6 +162,10 @@ h1 {
 }
 
 @media (max-width: 800px) {
+  .overlay-content {
+    width: 70%;
+    left: 15%;
+  }
   .overlay-content .projectColumns {
     flex-direction: column;
   }
@@ -171,7 +176,6 @@ h1 {
     color: #818181;
     display: block;
     transition: 0.8s;
-    margin: 0.5rem;
   }
   .overlay h2 {
     color: #818181;
@@ -181,8 +185,8 @@ h1 {
   .overlay h3 {
     color: #818181;
     font-size: 1.5rem;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
   .overlay p {
     color: #818181;
